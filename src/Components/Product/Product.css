@@ -1,0 +1,19 @@
+.product-card {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    float: right;
+    padding-right: 10px;
+    border-right: 1px solid lightgray;
+    text-align: left;
+
+}
+
+.add-to-cart-btn {
+    width: 30%;
+    background-color: goldenrod;
+    border-radius: 5px;
+    border-color: gray;
+    padding: 5px;
+    cursor: pointer;
+}
