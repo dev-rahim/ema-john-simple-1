@@ -1,0 +1,15 @@
+.cart-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.total-order,
+.cart-content p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-order {
+    color: brown;
+    font-weight: 900;
+}

@@ -3,10 +3,10 @@
     flex-direction: row;
     width: 75%;
     float: right;
-    padding-right: 10px;
-    border-right: 1px solid lightgray;
     text-align: left;
-
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+    margin-right: 10px;
 }
 
 .add-to-cart-btn {
@@ -16,4 +16,9 @@
     border-color: gray;
     padding: 5px;
     cursor: pointer;
+}
+
+.product-card h4 {
+    color: blue;
+    font-weight: 500;
 }

@@ -11,15 +11,22 @@ const Store = () => {
             .then(data => setProducts(data))
         // console.log(products);
     }, [])
+    const [cart, setCart] = useState([])
+    const handleAddToCart = (pd) => {
+        setCart([...cart, pd])
+        // console.log(cart);
+        // console.log("clicked");
+    }
+
     return (
         <div className="Store">
-            <div>
+            <div className='Product-container'>
                 {
-                    products.map(pd => <Product key={pd.key} product={pd} />)
+                    products.map(pd => <Product key={pd.key} handleAddToCart={handleAddToCart} product={pd} />)
                 }
             </div>
             <div>
-                <Cart />
+                <Cart cart={cart} />
             </div>
         </div>
     );
