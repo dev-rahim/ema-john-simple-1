@@ -17,12 +17,17 @@ const Store = () => {
         if (products.length) {
             const savedCartKeys = getStoredCart()
             // console.log(savedCart);
+            // console.log(savedCartKeys);
             const savedProducts = []
             for (const key in savedCartKeys) {
+                const Totalquantity = savedCartKeys[key];
                 const addedProducts = products.find(product => product.key === key);
+                addedProducts['quantity'] = Totalquantity;
                 savedProducts.push(addedProducts);
+
             }
             setCart(savedProducts);
+            // console.log;
 
         }
     }, [products])
