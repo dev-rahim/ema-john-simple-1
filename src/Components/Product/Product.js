@@ -10,7 +10,7 @@ const Product = (props) => {
     return (
         <div className='product-card'>
             <img src={img} alt="" />
-            <div>
+            <div className='product-content'>
                 <h4>{name}</h4>
                 <p>by: {seller}</p>
                 <p>${price}</p>
